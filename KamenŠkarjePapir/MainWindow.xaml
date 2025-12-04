@@ -1,0 +1,38 @@
+﻿<Window x:Class="KamenŠkarjePapir.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KamenŠkarjePapir"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="Gray">
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+            <!-- Start in Stop gumba -->
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button Content="Start" Width="80" Margin="5" Click="Start_Click"/>
+                <Button Content="Stop" Width="80" Margin="5" Click="Stop_Click"/>
+            </StackPanel>
+
+            <TextBlock Text="Izberi: " FontSize="20" HorizontalAlignment="Center" Margin="10"/>
+            
+            <!-- Števci -->
+            <StackPanel>
+                <TextBlock Name="PlayerWins" Foreground="LightGreen" FontSize="16"/>
+                <TextBlock Name="CpuWins" Foreground="LightBlue" FontSize="16"/>
+                <TextBlock Name="Izeenaceno" Foreground="Yellow" FontSize="16"/>
+            </StackPanel>
+            
+            <!-- Igralni Gumbi -->
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button Name="btnKamen" Content="Kamen" Width="80" Margin="5" Click="btnKamen_Click" IsEnabled="False"/>
+                <Button Name="btnSkarje" Content="Škarje" Width="80" Margin="5" Click="btnSkarje_Click" IsEnabled="False"/>
+                <Button Name="btnPapir" Content="Papir" Width="80" Margin="5" Click="btnPapir_Click" IsEnabled="False"/>
+            </StackPanel>
+
+            <TextBlock Name="playerChoice" Foreground="LightGreen" FontSize="18" HorizontalAlignment="Center" Margin="5"/>
+            <TextBlock Name="cpuChoice" Foreground="LightBlue" FontSize="18" HorizontalAlignment="Center" Margin="5"/>
+            <TextBlock Name="result" Foreground="Yellow" FontSize="24" FontWeight="Bold" HorizontalAlignment="Center" Margin="10"/>
+        </StackPanel>
+    </Grid>
+</Window>
