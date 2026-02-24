@@ -1,4 +1,4 @@
-# RockPaperScissorsWpf
+# Rock-Paper-Scissors WPF App
 
 A Rock-Paper-Scissors desktop game built with C# and WPF.
 
